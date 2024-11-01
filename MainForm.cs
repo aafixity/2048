@@ -107,21 +107,18 @@ namespace _2048
                 {
                     case Keys.W:
                         _board.Up();
-                        _board.SetNew();
                         break;
                     case Keys.S:
                         _board.Down();
-                        _board.SetNew();
                         break;
                     case Keys.A:
                         _board.Left();
-                        _board.SetNew();
                         break;
                     case Keys.D:
                         _board.Right();
-                        _board.SetNew();
                         break;
                 }
+                _board.SetNew();
                 PrintBoard();
             }
         }
